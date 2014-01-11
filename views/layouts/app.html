@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Yodaspeak{% endblock %}</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <script src="/js/modernizr.js"></script>
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+    <div class="row">
+        <div class="large-12 columns">
+            <h1>Yoda Translator</h1>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+
+    {% block footerscripts %}
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/foundation.min.js"></script>
+        <script src="/js/vendor/spin.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script type="text/javascript" src="/js/application.js"></script>
+    {% endblock %}
+
+</body>
+</html>

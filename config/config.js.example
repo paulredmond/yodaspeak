@@ -1,0 +1,6 @@
+// Rename me to config.js
+module.exports = {
+    mashape: {
+        key: '1234' // https://www.mashape.com/
+    }
+}

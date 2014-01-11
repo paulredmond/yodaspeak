@@ -1,0 +1,19 @@
+{% extends "./layouts/app.html" %}
+{% block content %}
+<div class="row">
+    <div class="large-6 medium-6 columns">
+        <div class="callout panel">
+            <div id="loading"></div>
+            <form action="/yodaspeak" method="get" id="yoda-translator-form">
+                <input type="text" name="say" />
+                <input type="submit" value="Translate" />
+            </form>
+        </div>
+    </div>
+    <div class="large-6 medium-6 columns">
+        <div class="callout panel">
+            <dl id="yoda-translations"></dl>
+        </div>
+    </div>
+</div>
+{% endblock %}
